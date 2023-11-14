@@ -1,11 +1,11 @@
 "use strict";
 class Customer {
     constructor() {
-        this.nip = 0;
+        this.nip = "";
         this.city = "";
         this.street = "";
         this.houseNumber = "";
-        this.zipCode = 0;
+        this.zipCode = "";
         this.comments = "";
         this.industry = "";
         this.active = false;

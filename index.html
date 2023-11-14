@@ -10,6 +10,8 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <script src="assets/js/customer.js"></script>
+    <script src="assets/js/index.js"></script>
   </head>
   <body>
     <div class="client-form" id="client-form" style="display: none">
@@ -84,65 +86,5 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="src/customer.ts"></script>
-    <script>
-      const customerList = []
-
-      
-
-      function save() {
-        
-        let newCustomer = new Customer()
-        newCustomer.name = document.getElementById("company-name").value
-        newCustomer.nip = document.getElementById("nip").value
-        newCustomer.city = document.getElementById("city").value
-        newCustomer.street = document.getElementById("street").value
-        newCustomer.houseNumber = document.getElementById("house-number").value
-        newCustomer.zipCode = document.getElementById("zipcode").value
-        newCustomer.comments = document.getElementById("comments").value
-        newCustomer.industry = document.getElementById("industry").value
-        newCustomer.active = document.getElementById("active").checked
-
-        customerList.push(newCustomer);
-
-        let ul = document.getElementById("customer-list");
-        ul.innerHTML +=
-          `<li class="list-group-item">` + newCustomer.nip+' ('+newCustomer.getAddress() + `)</li>`;
-      
-        console.log(newCustomer);
-        console.log(customerList)
-      }
-      function submit() {
-        let newCustomer = {
-          name: "Adam",
-          nip: 1234,
-          city: "Mrągowo",
-          street: "Majowa",
-          houseNumber: 8,
-          zipCode: 99999,
-          comments: "1234567",
-          industry: "Mleczarska",
-          active: true,
-        };
-        document.getElementById("company-name").value = newCustomer.name;
-        document.getElementById("nip").value = newCustomer.nip;
-        document.getElementById("city").value = newCustomer.city;
-        document.getElementById("street").value = newCustomer.street;
-        document.getElementById("house-number").value = newCustomer.houseNumber;
-        document.getElementById("zipcode").value = newCustomer.zipCode;
-        document.getElementById("comments").value = newCustomer.comments;
-        document.getElementById("industry").value = newCustomer.industry;
-        document.getElementById("active").checked = newCustomer.active;
-      }
-
-      function showForm() {
-        document.getElementById("client-form").style.display = "block";
-        document.getElementById("client-list").style.display = "none";
-      }
-      function showList() {
-        document.getElementById("client-form").style.display = "none";
-        document.getElementById("client-list").style.display = "block";
-      }
-    </script>
   </body>
 </html>

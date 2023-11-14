@@ -1,9 +1,9 @@
 class Customer {
-  nip: number = 0;
+  nip: string = "";
   city: string = "";
   street: string = "";
   houseNumber: string = "";
-  zipCode: number = 0;
+  zipCode: string = "";
   comments: string = "";
   industry: string = "";
   active: boolean = false;
