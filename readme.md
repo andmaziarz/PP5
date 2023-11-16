@@ -30,4 +30,4 @@ Projekt zaliczeniowy obejmuje stworzenie aplikacji spełniającej następujące 
 ### Dodatkowe uwagi
 
 Estetyka oraz funkcjonalność, dotępności dla użytkowników korzystających z czytników ekranowych lub mających inne specjalne potrzeby.
-- repo : ``https://github.com/andmaziarz/pp5-projekt``
+- repo : [https://github.com/andmaziarz/pp5-projekt](https://github.com/andmaziarz/pp5-projekt)
