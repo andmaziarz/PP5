@@ -10,6 +10,7 @@ Podstawy JavaScript, SCSS, Bootstrap oraz TypeScript. Tematy są omawiane w kont
 - **SCSS**: Tworzenie stylów dla aplikacji webowych przy użyciu preprocesora Sass/SCSS.
 - **Bootstrap**: Wykorzystanie frameworka Bootstrap do responsywnego projektowania stron internetowych.
 - **TypeScript**: Zastosowanie TypeScriptu jako narzędzia poprawiającego typowanie i zarządzanie błędami w JavaScript.
+- **Angular**: Użycie Angular CLI do szybkiego tworzenia aplikacji webowych.
 
 ## Projekt zaliczeniowy 📝
 
